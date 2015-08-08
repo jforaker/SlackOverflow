@@ -28,5 +28,7 @@ $ node server.js
 ```
 
 ##Deploy to Heroku
+###(must add your own SLACK_URL and STACK_EXCHANGE_API_KEY envs!!!)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jforaker/SlackOverflow)
 
