@@ -2,6 +2,8 @@
 
 A simple app written in node.js to search Stack Overflow
 
+![](http://jffileshares.s3.amazonaws.com/Screen-Recording-2015-08-08-00-53-24-pmlqUOpmK3.gif)
+
 Example slash command for search:
 
 ```sh
