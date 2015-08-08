@@ -34,7 +34,7 @@ Slack.prototype.postMessage = function (query, soResults) {
                 short: true
             };
         }),
-        
+
         options = _.extend(base_options, {
             body: {
                 icon_emoji: ':taco:',
@@ -48,13 +48,10 @@ Slack.prototype.postMessage = function (query, soResults) {
 
         callBack = function (error, response, body) {
             if (error) {
-                inspect(error, 'error slack:');
                 def.reject({status: 500, data: {error: error.message}});
             } else if (response.statusCode == 200) {
-                inspect(body, 'Slack success body:');
                 def.resolve(body);
             } else {
-                inspect(body, 'Slack Error body:');
                 def.reject(body);
             }
         };
