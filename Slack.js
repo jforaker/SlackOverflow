@@ -1,7 +1,8 @@
 var inspect = require('eyespect').inspector(),
     request = require('request'),
     $ = require('jquery-deferred'),
-    _ = require('lodash')
+    _ = require('lodash'),
+    emojis = require('./utils')
     ;
 
 function Slack(channel) {
@@ -35,9 +36,10 @@ Slack.prototype.postMessage = function (query, soResults) {
             };
         }),
 
+
         options = _.extend(base_options, {
             body: {
-                icon_emoji: ':taco:',
+                icon_emoji: _.sample(emojis),
                 attachments: [
                     {
                         fields: arrResults
