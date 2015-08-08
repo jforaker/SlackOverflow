@@ -27,3 +27,6 @@ $ export STACK_EXCHANGE_API_KEY=your_stack_exchange_api_key
 $ node server.js
 ```
 
+##Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jforaker/SlackOverflow)
+
