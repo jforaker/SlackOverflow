@@ -34,13 +34,15 @@ Slack.prototype.postMessage = function (query, soResults) {
         };
     });
 
-    var options = _.extend(base_options.body, {
-        icon_emoji: ':taco:',
-        attachments: [
-            {
-                fields: arrResults
-            }
-        ]
+    var options = _.extend(base_options, {
+        body: {
+            icon_emoji: ':taco:',
+            attachments: [
+                {
+                    fields: arrResults
+                }
+            ]
+        }
     });
 
     var callBack = function (error, response, body) {
