@@ -26,19 +26,6 @@ Slack.prototype.postMessage = function (query, soResults) {
         url: process.env.SLACK_URL
     };
 
-    if(soResults.error_id){
-        request.post(_.extend(base_options, {
-            body: {
-                attachments: [
-                    {
-                        title: 'Error ' + soResults.error_message
-                    }
-                ]
-            }
-        }));
-        return;
-    }
-
     var arrResults = _.map(soResults.items, function (resu) {
         return {
             value: resu.link,
@@ -47,15 +34,13 @@ Slack.prototype.postMessage = function (query, soResults) {
         };
     });
 
-    var options = _.extend(base_options, {
-        body: {
-            icon_emoji: ':taco:',
-            attachments: [
-                {
-                    fields: arrResults
-                }
-            ]
-        }
+    var options = _.extend(base_options.body, {
+        icon_emoji: ':taco:',
+        attachments: [
+            {
+                fields: arrResults
+            }
+        ]
     });
 
     var callBack = function (error, response, body) {
