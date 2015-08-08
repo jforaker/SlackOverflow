@@ -1,0 +1,21 @@
+{
+  "name": "slackoverflow",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "latest",
+    "dotenv": "^1.2.0",
+    "express": "latest",
+    "eyes": "^0.1.8",
+    "eyespect": "^0.1.10",
+    "jquery": "^2.1.3",
+    "jquery-deferred": "^0.3.0",
+    "lodash": "^3.10.0",
+    "node-basicauth": "latest",
+    "request": "^2.58.0",
+    "socket.io": "latest",
+    "stackexchange": "^0.3.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
