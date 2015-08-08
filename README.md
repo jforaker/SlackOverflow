@@ -23,7 +23,7 @@ $ npm install
 
 ```sh
 $ export SLACK_URL=your_Slack_incoming_webhook_url
-$ export STACK_EXCHANGE_API_KEY=your_Slack_incoming_webhook_url
+$ export STACK_EXCHANGE_API_KEY=your_stack_exchange_api_key
 $ node server.js
 ```
 
