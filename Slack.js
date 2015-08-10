@@ -15,14 +15,7 @@ Slack.prototype.postMessage = function (query, soResults) {
         _that = this,
 
         base_options = {
-            body: {
-                attachments: [
-                    {
-                        fallback: 'Required text summary of the attachment that is shown by clients that understand attachments but choose not to show them.',
-                        color: '#e74c3c'
-                    }
-                ]
-            },
+            body: {},
             json: true,
             url: process.env.SLACK_URL
         },
@@ -42,6 +35,8 @@ Slack.prototype.postMessage = function (query, soResults) {
                 icon_emoji: _.sample(emojis),
                 attachments: [
                     {
+                        fallback: 'Required text summary of the attachment that is shown by clients that understand attachments but choose not to show them.',
+                        color: '#e74c3c',
                         fields: arrResults
                     }
                 ]
