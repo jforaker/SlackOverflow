@@ -16,7 +16,6 @@ Slack.prototype.postMessage = function (query, soResults) {
 
         base_options = {
             body: {
-                channel: _that.channel,
                 attachments: [
                     {
                         fallback: 'Required text summary of the attachment that is shown by clients that understand attachments but choose not to show them.',
@@ -39,6 +38,7 @@ Slack.prototype.postMessage = function (query, soResults) {
 
         options = _.extend(base_options, {
             body: {
+                channel: _that.channel,
                 icon_emoji: _.sample(emojis),
                 attachments: [
                     {
