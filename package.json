@@ -9,7 +9,7 @@
     "eyespect": "^0.1.10",
     "jquery": "^3.4.1",
     "jquery-deferred": "^0.3.0",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.15",
     "node-basicauth": "latest",
     "request": "^2.58.0",
     "socket.io": "latest",
