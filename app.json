@@ -3,9 +3,5 @@
   "description": "A simple app written in node.js to search Stack Overflow with a Slack slash command",
   "repository": "https://github.com/jforaker/SlackOverflow",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
-  "keywords": [
-    "node",
-    "express",
-    "slack"
-  ]
+  "keywords": ["node", "express", "slack"]
 }
