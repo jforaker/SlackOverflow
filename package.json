@@ -7,7 +7,7 @@
     "express": "latest",
     "eyes": "^0.1.8",
     "eyespect": "^0.1.10",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-deferred": "^0.3.0",
     "lodash": "^4.17.19",
     "node-basicauth": "latest",
